@@ -59,7 +59,7 @@ function setup() {
   ground = createSprite(camera.x-50,height,width,2);
   ground.addImage("ground",groundImage);
   ground.x = camera.x;
-  ground.velocityX = -(6 + 3*score/100);
+  
   
   gameOver = createSprite(camera.x+50,height/2- 50);
   gameOver.addImage(gameOverImg);
@@ -68,7 +68,7 @@ function setup() {
   restart.addImage(restartImg);
   
   gameOver.scale = 0.5;
-  restart.scale = 0.1;
+  restart.scale = 0.3;
 
   gameOver.visible = false;
   restart.visible = false;
